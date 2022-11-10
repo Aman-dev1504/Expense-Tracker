@@ -15,13 +15,21 @@
   text-align: center;
   padding:4em 0;
 }
-h1{
-  font-size: 29px;
-  cursor: pointer;
-}
+
 .bg-yellow{
 background-color: var(--color-p);
 }
 .bg-purple{
   background-color: var(--color-p);
+}
+.title{
+position: absolute;
+left: 0;
+right: 0;
+top: 40%;
+margin-left: auto;
+margin-right: auto;
+}
+.form-input{
+  @apply mt-1 block w-full py-2 px-3 border border-gray-200 bg-white rounded-md focus:outline-none focus:ring-indigo-500 sm:text-sm
 }

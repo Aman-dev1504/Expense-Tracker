@@ -1,5 +1,7 @@
 import React from 'react';
 import {useForm} from 'react-hook-form'
+import './form.css';
+import List from './list';
 export default function Form() {
    const {register,handleSubmit,resetField}=useForm();
    const onSubmit=(data)=>{
@@ -22,10 +24,11 @@ export default function Form() {
                 <input type="text" {...register('amount')} placeholder='Amount' className='form-input'></input>
             </div>
             <div className='submit-btn'>
-                <button className='border py-2 text-white bg-indigo-500 w-full'>Make Transaction</button>
+                <button className='border py-2 text-white bg-indigo-500 w-full btn-submit'>Make Transaction</button>
             </div>
         </div>
       </form>
+      <List></List>
     </div>
   )
 }

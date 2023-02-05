@@ -26,8 +26,8 @@ const transaction_module=new Schema({
         type:Number,
     },
     date:{
-        type:date,
-        default:date.now
+        type:Date,
+        default:Date.now
     }
 })
 const Categories= mongoose.model('categories',categories_module)

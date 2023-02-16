@@ -14,7 +14,7 @@ function App() {
       <Form></Form>
     </div>
       </div>
-      <h4 className='Author'>Made by <a href="https://www.aman-malviya.tech"> Aman malviya❤️</a></h4>
+      <h4 className='Author'>Made by <a target="_blank"  href="https://www.linkedin.com/in/amanmalviya1/" rel="noreferrer"> Aman malviya❤️</a></h4>
     </div>
   );
 }

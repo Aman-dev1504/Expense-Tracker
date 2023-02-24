@@ -41,7 +41,7 @@ create.save(function(err){
 
 //get req :: https://localhost:8080/api/transaction
 async function get_Transaction(req,res){
-    let data=await model.Transaction.find({});
+     let data=await model.Transaction.find({});
     return res.json(data);
 }
 

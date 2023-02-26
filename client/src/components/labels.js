@@ -23,7 +23,6 @@ const obj=[
 export default function labels() {
   
     // const {data, isFetching, isSuccess,isError}= api.useGetCategoriesQuery();
-
     const {data, isFetching, isSuccess,isError}= api.useGetLabelsQuery();
 
     console.log(data);

@@ -5,6 +5,7 @@ const connection= mongoose.connect(process.env.URI)
     return db;
 }).catch(err=>{
     console.log("Connection error")
+    console.log(err);
 })
 
 module.exports=connection;

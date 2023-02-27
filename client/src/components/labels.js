@@ -4,7 +4,7 @@ import { default as api } from '../store/apiSlice';
 const obj=[
     { 
         type:"Savings",
-        color:'#f9c74f',
+        color:'#90be6d',
         percent:45
     },
     { 
@@ -13,7 +13,7 @@ const obj=[
         percent:20
     },
     { 
-        type:"Exprense",
+        type:"Exprenses",
         color:'#f9c74f',
         percent:10
     },
@@ -25,7 +25,6 @@ export default function labels() {
     // const {data, isFetching, isSuccess,isError}= api.useGetCategoriesQuery();
     const {data, isFetching, isSuccess,isError}= api.useGetLabelsQuery();
 
-    console.log(data);
    let Transaction;
    if(isFetching){
     Transaction=<div>Loading...</div>

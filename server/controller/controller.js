@@ -61,8 +61,8 @@ model.Transaction.aggregate([
     {
         $lookup:{
             from:"categories",
-            localField:'types',
-            foreignField:"types",
+            localField:'type',
+            foreignField:"type",
             as:"categories_info"
     
         }

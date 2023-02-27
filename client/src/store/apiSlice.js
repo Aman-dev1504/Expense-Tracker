@@ -13,7 +13,7 @@ export const apiSlice= createApi({
     //getLabels
     getLabels:builder.query({
         //get - http://localhost:8080/api/labels
-        query:()=>'/api/labels'
+        query:()=>'/api/labels' 
     }),
 
     //addTransaction

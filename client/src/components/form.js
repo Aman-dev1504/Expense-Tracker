@@ -17,7 +17,7 @@ export default function Form() {
     await addTransaction(data).unwrap();
     resetField('name');
     resetField('amount');
-    toast.success("Transaction Succesful");
+    toast.success("Transaction Succesful"); //show popup
    }
    
 

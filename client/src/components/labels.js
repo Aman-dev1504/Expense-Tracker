@@ -1,24 +1,24 @@
 import React from 'react'
 import { default as api } from '../store/apiSlice';
 
-const obj=[
-    { 
-        type:"Savings",
-        color:'#90be6d',
-        percent:45
-    },
-    { 
-        type:"Investment",
-        color:'#f9c74f',
-        percent:20
-    },
-    { 
-        type:"Exprenses",
-        color:'#f9c74f',
-        percent:10
-    },
+// const obj=[
+//     { 
+//         type:"Savings",
+//         color:'#90be6d',
+//         percent:45
+//     },
+//     { 
+//         type:"Investment",
+//         color:'#f9c74f',
+//         percent:20
+//     },
+//     { 
+//         type:"Exprenses",
+//         color:'#f9c74f',
+//         percent:10
+//     },
 
-]
+// ]
 
 export default function labels() {
   

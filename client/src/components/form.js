@@ -13,7 +13,7 @@ export default function Form() {
    const [addTransaction]=api.useAddTransactionMutation();
 
    const onSubmit=async (data)=>{
-    if(!data) return {}  &&   toast.error("Transaction Error")   ;
+    if(!data) return {}  &&   toast.error("Transaction Error");
     await addTransaction(data).unwrap();
     resetField('name');
     resetField('amount');

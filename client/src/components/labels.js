@@ -22,8 +22,8 @@ import { default as api } from '../store/apiSlice';
 
 export default function labels() {
   
-    // const {data, isFetching, isSuccess,isError}= api.useGetCategoriesQuery();
-    const {data, isFetching, isSuccess,isError}= api.useGetLabelsQuery();
+    //const {data, isFetching, isSuccess,isError}= api.useGetCategoriesQuery();
+  const {data, isFetching, isSuccess,isError}= api.useGetLabelsQuery();
     console.log(data);
    let Transaction;
    if(isFetching){

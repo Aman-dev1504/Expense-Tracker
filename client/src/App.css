@@ -6,6 +6,10 @@
   --color-y:#f9c74f;
   --color-p:#9d4edd;
 }
+body{
+  overflow-y: hidden; 
+  overflow-x: hidden;
+}
 *>*{
   font-family: 'Poppins', sans-serif;
   margin:0;

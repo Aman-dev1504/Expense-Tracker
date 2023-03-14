@@ -1,6 +1,7 @@
 import React from 'react'
 import { default as api } from '../store/apiSlice';
 import 'boxicons'
+import {  toast } from 'react-toastify';
 export default function List() {
     const {data, isFetching, isSuccess,isError}= api.useGetLabelsQuery();
     const [deleteTransaction] = api.useDeleteTransactionMutation()
@@ -8,7 +9,8 @@ export default function List() {
 
     const handlerClick = (e) => {
       if(!e.target.dataset.id) return 0;
-      deleteTransaction({ _id : e.target.dataset.id })
+      deleteTransaction({ _id : e.target.dataset.id });
+      toast.error("Transaction Removed");
   }
 
    if(isFetching){
